@@ -1,0 +1,7 @@
+/* 
+    page specific CSS parse demo
+*/
+<%@ page import="gsparsetestapp.Content" %>
+
+${Content.get(genclass).content}
+<g:each in="${Content.list()}">${it.content}</g:each>

@@ -4,6 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="layout" content="main" />
+    <link rel="stylesheet" href="${createLink(controller: 'script', action: 'parse', params: [path: 'css/index.css', genclass: genclass])}"/>
     <title>Test GSParse</title>
   </head>
   <body>
@@ -14,6 +15,12 @@
     <div id="colorMeCSS">
       This DIV has been colored in by CSS with a paramater
     </div>
-    <a id="clickme" href="#">click me</a>
+    <div class="genclass">
+      This should be white on grey.
+    </div>
+    <div>
+      <a id="clickme" href="#">click me</a>
+    </div>
+    ${test}
   </body>
 </html>

@@ -7,7 +7,7 @@ class UrlMappings {
 			}
 		}
                 "/resource/$path**"(controller: 'script', action: 'parse')
-		"/"(view:"/index")
+		"/"(controller: 'test', action: 'index')
 		"500"(view:'/error')
 	}
 }
