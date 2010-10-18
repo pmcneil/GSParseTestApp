@@ -4,6 +4,6 @@ class TestController {
 
     def gsParseService
     def index = {
-        [test: "wobble", genclass: 1]
+        [test: "wobble is passed in the controller", genclass: 1]
     }
 }
